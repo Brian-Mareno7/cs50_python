@@ -9,19 +9,20 @@ cualidad={ "Valiente": "Gryffindor",
         "Leal": "Hufflepuff",
         "Sabio": "Ravenclaw"}
 
-respuesta = input("Qué cualidad prefieres? (Valiente/Astuto/Leal/Sabio) ").lower()
-print("El sombrero está pensando")
-time.sleep(2)
+while True:
+    respuesta = input("Qué cualidad prefieres? (Valiente/Astuto/Leal/Sabio) ").lower()
+    print("El sombrero está pensando")
+    time.sleep(2)
 
-if respuesta == "valiente":
-    print(cualidad["Valiente"])
-elif respuesta == "astuto":
-    print(cualidad["Astuto"])
-elif respuesta == "leal":
-    print(cualidad["Leal"])
-elif respuesta == "sabio":
-    print(cualidad["Sabio"])   
-elif respuesta == "no se":
-    print(random.choice(casas))
-else: 
-    print("¡Eres un muggle!")
+    if respuesta == "valiente":
+        print(cualidad["Valiente"])
+    elif respuesta == "astuto":
+        print(cualidad["Astuto"])
+    elif respuesta == "leal":
+        print(cualidad["Leal"])
+    elif respuesta == "sabio":
+        print(cualidad["Sabio"])   
+    elif respuesta == "no se":
+        print(random.choice(casas))
+    else: 
+        print("¡Eres un muggle!")
