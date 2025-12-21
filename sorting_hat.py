@@ -1,4 +1,8 @@
 #ejercicio 1
+import random
+
+casas = ["Gryffindor", "Slytherin", "Hufflepuff", "Ravenclaw" ]
+
 cualidad={ "Valiente": "Gryffindor",
         "Astuto": "Slytherin",
         "Leal": "Hufflepuff",
@@ -14,5 +18,7 @@ elif respuesta == "leal":
     print(cualidad["Leal"])
 elif respuesta == "sabio":
     print(cualidad["Sabio"])   
+elif respuesta == "no se":
+    print(random.choice(casas))
 else: 
     print("¡Eres un muggle!")
