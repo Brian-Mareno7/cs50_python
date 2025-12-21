@@ -1,2 +1,5 @@
-for i in range(3):
-    print("miau")
+def meow(n):
+    for i in range(n):
+        print("miau")
+
+meow(3)
