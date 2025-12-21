@@ -10,6 +10,7 @@ cualidad={ "Valiente": "Gryffindor",
         "Sabio": "Ravenclaw"}
 
 while True:
+    nombre = input("Ingresa tu nombre :")
     respuesta = input("Qué cualidad prefieres? (Valiente/Astuto/Leal/Sabio) ").lower()
 
     if respuesta == "salir":
@@ -21,14 +22,19 @@ while True:
     time.sleep(2)
 
     if respuesta == "valiente":
-        print(cualidad["Valiente"])
+        casa = (cualidad["Valiente"])
     elif respuesta == "astuto":
-        print(cualidad["Astuto"])
+        casa = (cualidad["Astuto"])
     elif respuesta == "leal":
-        print(cualidad["Leal"])
+        casa =(cualidad["Leal"])
     elif respuesta == "sabio":
-        print(cualidad["Sabio"])   
+        casa =(cualidad["Sabio"])   
     elif respuesta == "no se":
-        print(random.choice(casas))
+        casa = (random.choice(casas))
     else: 
-        print("¡Eres un muggle!")
+        casa = ("¡Eres un muggle!")
+    
+    f = open("alumnos.txt", "a")
+    f.write(nombre + " - " + casa + "\n")
+    f.close()
+    print(nombre + " - " + casa + "\n")
