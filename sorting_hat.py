@@ -1,5 +1,6 @@
 #ejercicio 1
 import random
+import time
 
 casas = ["Gryffindor", "Slytherin", "Hufflepuff", "Ravenclaw" ]
 
@@ -9,6 +10,8 @@ cualidad={ "Valiente": "Gryffindor",
         "Sabio": "Ravenclaw"}
 
 respuesta = input("Qué cualidad prefieres? (Valiente/Astuto/Leal/Sabio) ").lower()
+print("El sombrero está pensando")
+time.sleep(2)
 
 if respuesta == "valiente":
     print(cualidad["Valiente"])
