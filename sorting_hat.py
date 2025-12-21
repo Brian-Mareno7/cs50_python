@@ -11,7 +11,13 @@ cualidad={ "Valiente": "Gryffindor",
 
 while True:
     respuesta = input("Qué cualidad prefieres? (Valiente/Astuto/Leal/Sabio) ").lower()
+
+    if respuesta == "salir":
+        print("Travesura realizada")
+        break
+
     print("El sombrero está pensando")
+    
     time.sleep(2)
 
     if respuesta == "valiente":
